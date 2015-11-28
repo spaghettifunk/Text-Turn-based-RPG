@@ -8,4 +8,17 @@
 
 #include "armour.hpp"
 
-Armour* Armour::Next() { return this->next; }
+Armour::Armour(const Armour&)
+{
+    // update values
+}
+
+Armour& Armour::operator=(const Armour& piece)
+{
+    if (this == &piece)
+        return *this;
+    
+    // update values here
+    
+    return *this;
+}

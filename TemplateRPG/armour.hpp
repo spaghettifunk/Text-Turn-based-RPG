@@ -10,13 +10,24 @@
 #define armour_hpp
 
 #include <stdio.h>
+#include <string>
 
 class Armour
 {
 private:
-    Armour *next;
+    std::string name = "";
+    int lifetime = 100;
 public:
-    Armour* Next();
+    Armour(const Armour&);
+    
+    Armour& Next();
+    Armour& operator=(const Armour&);
+    
+    friend bool operator!=(const Armour&, const Armour&);
+    
+    // methods
+    void SetName(std::string);
+    void SetLifetime(int);
 };
 
 #endif /* armour_hpp */

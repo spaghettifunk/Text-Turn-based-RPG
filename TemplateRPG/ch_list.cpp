@@ -8,45 +8,61 @@
 
 #include "ch_list.hpp"
 
-template<> List<Item>::List()
+template<class T> List<T>::List()
 {
-    head = nullptr;
-    tail = nullptr;
+    this->head = nullptr;
+    this->tail = nullptr;
 }
 
-template<> List<Armour>::List()
+template<class T> List<T>::~List()
 {
-    head = nullptr;
-    tail = nullptr;
-}
-
-template<> List<Item>::~List()
-{
-    Item* curr_item = this->head; // initialize current node to root
+    T curr_item = this->head; // initialize current node to root
     while (curr_item != nullptr)
     {
-        Item* next_item = curr_item->Next();   // get next node
+        T next_item = curr_item->Next();   // get next node
         delete curr_item; // delete current
         curr_item = next_item; // set current to "old" next
     }
 }
 
-template<> List<Armour>::~List()
+template<class T> void List<T>::add(T &i)
 {
-    Armour* curr_item = this->head; // initialize current node to root
-    while (curr_item != nullptr)
-    {
-        Armour* next_item = curr_item->Next();    // get next node
-        delete curr_item;                         // delete current
-        curr_item = next_item;                     // set current to "old" next
+    this->tail->Next() = i;
+}
+
+template<class T> void List<T>::remove(T &item)
+{
+    T curr_item = this->head;
+    while (curr_item != nullptr) {
+        if (curr_item == item) {
+            delete curr_item;
+            break;
+        }
     }
 }
 
-template<> void List<Item>::add(Item &) { }
-template<> void List<Armour>::add(Armour &) { }
+template<class T> int List<T>::size()
+{
+    int size = 0;
+    T curr_item = this->head;
+    while (curr_item->Next() != nullptr) {
+        curr_item = &curr_item->Next();
+        size++;
+    }
+    
+    return size;
+}
 
-template<> void List<Item>::remove(Item &) { }
-template<> void List<Armour>::remove(Armour &) { }
-
+// specialized Item
+template<> List<Item>::List() { }
+template<> List<Item>::~List() { }
+template<> void List<Item>::add(Item& i) { }
+template<> void List<Item>::remove(Item& i){ }
 template<> int List<Item>::size() { return 0; }
+
+// specialize Armour
+template<> List<Armour>::List() { }
+template<> List<Armour>::~List() { }
+template<> void List<Armour>::add(Armour& i) { }
+template<> void List<Armour>::remove(Armour& i){ }
 template<> int List<Armour>::size() { return 0; }

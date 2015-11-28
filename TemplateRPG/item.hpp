@@ -10,13 +10,25 @@
 #define item_hpp
 
 #include <stdio.h>
+#include <string>
 
 class Item
 {
 private:
-    Item *next;
+    std::string name = "";
+    int lifetime = 100;
+    
 public:
-    Item* Next();
+    Item(const Item&);
+    
+    Item& operator=(const Item&);
+    
+    friend bool operator!=(const Item&, const Item&);
+    friend bool operator==(const Item&, const Item&);
+    
+    // methods
+    void SetName(std::string);
+    void SetLifetime(int);
 };
 
 #endif /* item_hpp */

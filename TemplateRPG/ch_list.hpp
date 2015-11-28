@@ -17,16 +17,27 @@
 template <class T>
 class List
 {
-private:
-    T *head;
-    T *tail;
+    class node
+    {
+        T data;
+        node *next;
+    public:
+        node(T data, node *next = NULL) : data(data), next(next) { }
+        node* Next() { return next; }
+        T& GetElem() { return data; }
+    };
+    
+    node *head;
+    node *tail;
 public:
+    
     List();
     ~List();
     
     void add(T&);
     void remove(T&);
     int size();
+    // etc.
 };
 
 #endif /* ch_list_hpp */
