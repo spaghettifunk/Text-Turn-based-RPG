@@ -11,4 +11,12 @@
 
 #include <stdio.h>
 
+class Item
+{
+private:
+    Item *next;
+public:
+    Item* Next();
+};
+
 #endif /* item_hpp */

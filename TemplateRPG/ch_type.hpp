@@ -1,19 +1,19 @@
 //
-//  ch_class.hpp
+//  ch_type.hpp
 //  TemplateRPG
 //
 //  Created by Davide Berdin on 28/11/15.
 //  Copyright © 2015 Davide Berdin. All rights reserved.
 //
 
-#ifndef ch_class_hpp
-#define ch_class_hpp
+#ifndef ch_type_hpp
+#define ch_type_hpp
 
 #include <stdio.h>
 
-class Ch_Class
+class CH_Type
 {
     
 };
 
-#endif /* ch_class_hpp */
+#endif /* ch_type_hpp */

@@ -11,4 +11,12 @@
 
 #include <stdio.h>
 
+class Armour
+{
+private:
+    Armour *next;
+public:
+    Armour* Next();
+};
+
 #endif /* armour_hpp */

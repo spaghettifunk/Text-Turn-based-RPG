@@ -11,4 +11,9 @@
 
 #include <stdio.h>
 
+class Weapon
+{
+    
+};
+
 #endif /* weapon_hpp */

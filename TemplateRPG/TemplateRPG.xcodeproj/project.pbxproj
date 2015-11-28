@@ -22,6 +22,8 @@
 		08E2C7DB1C0A251C0096E791 /* life_items.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7D91C0A251C0096E791 /* life_items.cpp */; };
 		08E2C7DE1C0A25270096E791 /* other_items.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7DC1C0A25270096E791 /* other_items.cpp */; };
 		08E2C7E11C0A25330096E791 /* mission_items.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7DF1C0A25330096E791 /* mission_items.cpp */; };
+		08E2C7E61C0A29630096E791 /* ch_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7E41C0A29630096E791 /* ch_type.cpp */; };
+		08E2C7E91C0A2B240096E791 /* ch_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7E71C0A2B240096E791 /* ch_list.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +70,10 @@
 		08E2C7DF1C0A25330096E791 /* mission_items.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mission_items.cpp; sourceTree = "<group>"; };
 		08E2C7E01C0A25330096E791 /* mission_items.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mission_items.hpp; sourceTree = "<group>"; };
 		08E2C7E31C0A256A0096E791 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		08E2C7E41C0A29630096E791 /* ch_type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ch_type.cpp; sourceTree = "<group>"; };
+		08E2C7E51C0A29630096E791 /* ch_type.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ch_type.hpp; sourceTree = "<group>"; };
+		08E2C7E71C0A2B240096E791 /* ch_list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ch_list.cpp; sourceTree = "<group>"; };
+		08E2C7E81C0A2B240096E791 /* ch_list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ch_list.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +130,6 @@
 			children = (
 				08E2C7BA1C0A24550096E791 /* class */,
 				08E2C7B91C0A24430096E791 /* type */,
-				08E2C7B61C0A243A0096E791 /* ch_class.cpp */,
-				08E2C7B71C0A243A0096E791 /* ch_class.hpp */,
 			);
 			name = special;
 			sourceTree = "<group>";
@@ -139,6 +143,8 @@
 				08E2C7BF1C0A24770096E791 /* orc.hpp */,
 				08E2C7C11C0A24830096E791 /* dwarf.cpp */,
 				08E2C7C21C0A24830096E791 /* dwarf.hpp */,
+				08E2C7E41C0A29630096E791 /* ch_type.cpp */,
+				08E2C7E51C0A29630096E791 /* ch_type.hpp */,
 			);
 			name = type;
 			sourceTree = "<group>";
@@ -146,6 +152,8 @@
 		08E2C7BA1C0A24550096E791 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				08E2C7B61C0A243A0096E791 /* ch_class.cpp */,
+				08E2C7B71C0A243A0096E791 /* ch_class.hpp */,
 				08E2C7C41C0A24910096E791 /* warrior.cpp */,
 				08E2C7C51C0A24910096E791 /* warrior.hpp */,
 				08E2C7C71C0A249C0096E791 /* mage.cpp */,
@@ -194,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				08E2C7E31C0A256A0096E791 /* constants.h */,
+				08E2C7E71C0A2B240096E791 /* ch_list.cpp */,
+				08E2C7E81C0A2B240096E791 /* ch_list.hpp */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -255,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08E2C7B81C0A243A0096E791 /* ch_class.cpp in Sources */,
+				08E2C7E91C0A2B240096E791 /* ch_list.cpp in Sources */,
 				08E2C7D01C0A24E20096E791 /* armour.cpp in Sources */,
 				08E2C7CC1C0A24AA0096E791 /* necromance.cpp in Sources */,
 				08E2C7B41C0A241A0096E791 /* base_character.cpp in Sources */,
@@ -262,6 +273,7 @@
 				08E2C7C91C0A249C0096E791 /* mage.cpp in Sources */,
 				08E2C7D31C0A24EE0096E791 /* weapon.cpp in Sources */,
 				08E2C7C61C0A24910096E791 /* warrior.cpp in Sources */,
+				08E2C7E61C0A29630096E791 /* ch_type.cpp in Sources */,
 				08E2C7E11C0A25330096E791 /* mission_items.cpp in Sources */,
 				08E2C7D71C0A25080096E791 /* item.cpp in Sources */,
 				08E2C7DE1C0A25270096E791 /* other_items.cpp in Sources */,

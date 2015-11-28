@@ -7,3 +7,5 @@
 //
 
 #include "armour.hpp"
+
+Armour* Armour::Next() { return this->next; }
