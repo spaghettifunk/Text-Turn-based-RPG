@@ -29,6 +29,11 @@
 		08EAD99B1C0BAEF000EB036D /* dwarf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9971C0BAEF000EB036D /* dwarf.cpp */; };
 		08EAD99C1C0BAEF000EB036D /* human.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9981C0BAEF000EB036D /* human.cpp */; };
 		08EAD99D1C0BAEF000EB036D /* orc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9991C0BAEF000EB036D /* orc.cpp */; };
+		08EAD9A11C0BB36900EB036D /* world.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD99F1C0BB36900EB036D /* world.cpp */; };
+		08EAD9A51C0BB3AE00EB036D /* place.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9A31C0BB3AE00EB036D /* place.cpp */; };
+		08EAD9A81C0BB3BE00EB036D /* special_place.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9A61C0BB3BE00EB036D /* special_place.cpp */; };
+		08EAD9AC1C0BB4B900EB036D /* story.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9AA1C0BB4B900EB036D /* story.cpp */; };
+		08EAD9B01C0BB4E900EB036D /* dialogs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9AE1C0BB4E900EB036D /* dialogs.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +94,16 @@
 		08EAD9971C0BAEF000EB036D /* dwarf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dwarf.cpp; path = Character/type/dwarf.cpp; sourceTree = "<group>"; };
 		08EAD9981C0BAEF000EB036D /* human.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = human.cpp; path = Character/type/human.cpp; sourceTree = "<group>"; };
 		08EAD9991C0BAEF000EB036D /* orc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = orc.cpp; path = Character/type/orc.cpp; sourceTree = "<group>"; };
+		08EAD99F1C0BB36900EB036D /* world.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = world.cpp; path = World/world.cpp; sourceTree = "<group>"; };
+		08EAD9A01C0BB36900EB036D /* world.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = world.hpp; path = World/world.hpp; sourceTree = "<group>"; };
+		08EAD9A31C0BB3AE00EB036D /* place.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = place.cpp; path = World/places/place.cpp; sourceTree = "<group>"; };
+		08EAD9A41C0BB3AE00EB036D /* place.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = place.hpp; path = World/places/place.hpp; sourceTree = "<group>"; };
+		08EAD9A61C0BB3BE00EB036D /* special_place.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = special_place.cpp; path = World/places/special_place.cpp; sourceTree = "<group>"; };
+		08EAD9A71C0BB3BE00EB036D /* special_place.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = special_place.hpp; path = World/places/special_place.hpp; sourceTree = "<group>"; };
+		08EAD9AA1C0BB4B900EB036D /* story.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = story.cpp; path = Story/story.cpp; sourceTree = "<group>"; };
+		08EAD9AB1C0BB4B900EB036D /* story.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = story.hpp; path = Story/story.hpp; sourceTree = "<group>"; };
+		08EAD9AE1C0BB4E900EB036D /* dialogs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dialogs.cpp; path = Story/dialogs/dialogs.cpp; sourceTree = "<group>"; };
+		08EAD9AF1C0BB4E900EB036D /* dialogs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = dialogs.hpp; path = Story/dialogs/dialogs.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +120,8 @@
 		08E2C79E1C0A1D6E0096E791 = {
 			isa = PBXGroup;
 			children = (
+				08EAD9A91C0BB4A400EB036D /* Story */,
+				08EAD99E1C0BB34900EB036D /* World */,
 				08E2C7F31C0B97070096E791 /* NPC */,
 				08E2C7EF1C0B96440096E791 /* Turn-base */,
 				08E2C7E21C0A25570096E791 /* Utilities */,
@@ -257,6 +274,46 @@
 			name = NPC;
 			sourceTree = "<group>";
 		};
+		08EAD99E1C0BB34900EB036D /* World */ = {
+			isa = PBXGroup;
+			children = (
+				08EAD9A21C0BB38100EB036D /* places */,
+				08EAD99F1C0BB36900EB036D /* world.cpp */,
+				08EAD9A01C0BB36900EB036D /* world.hpp */,
+			);
+			name = World;
+			sourceTree = "<group>";
+		};
+		08EAD9A21C0BB38100EB036D /* places */ = {
+			isa = PBXGroup;
+			children = (
+				08EAD9A31C0BB3AE00EB036D /* place.cpp */,
+				08EAD9A41C0BB3AE00EB036D /* place.hpp */,
+				08EAD9A61C0BB3BE00EB036D /* special_place.cpp */,
+				08EAD9A71C0BB3BE00EB036D /* special_place.hpp */,
+			);
+			name = places;
+			sourceTree = "<group>";
+		};
+		08EAD9A91C0BB4A400EB036D /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				08EAD9AD1C0BB4D000EB036D /* dialogs */,
+				08EAD9AA1C0BB4B900EB036D /* story.cpp */,
+				08EAD9AB1C0BB4B900EB036D /* story.hpp */,
+			);
+			name = Story;
+			sourceTree = "<group>";
+		};
+		08EAD9AD1C0BB4D000EB036D /* dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				08EAD9AE1C0BB4E900EB036D /* dialogs.cpp */,
+				08EAD9AF1C0BB4E900EB036D /* dialogs.hpp */,
+			);
+			name = dialogs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,19 +379,24 @@
 				08EAD98E1C0BAEE200EB036D /* ch_class.cpp in Sources */,
 				08EAD9631C0BAE6900EB036D /* npc.cpp in Sources */,
 				08EAD98F1C0BAEE200EB036D /* mage.cpp in Sources */,
+				08EAD9B01C0BB4E900EB036D /* dialogs.cpp in Sources */,
 				08EAD9821C0BAECC00EB036D /* base_character.cpp in Sources */,
 				08EAD97E1C0BAEB900EB036D /* armour.cpp in Sources */,
 				08EAD97F1C0BAEB900EB036D /* weapon.cpp in Sources */,
 				08EAD99C1C0BAEF000EB036D /* human.cpp in Sources */,
 				08EAD99A1C0BAEF000EB036D /* ch_type.cpp in Sources */,
+				08EAD9A11C0BB36900EB036D /* world.cpp in Sources */,
 				08EAD9901C0BAEE200EB036D /* necromance.cpp in Sources */,
 				08EAD9761C0BAEA300EB036D /* other_items.cpp in Sources */,
+				08EAD9AC1C0BB4B900EB036D /* story.cpp in Sources */,
 				08EAD9791C0BAEAD00EB036D /* item.cpp in Sources */,
 				08EAD9621C0BAE6900EB036D /* npc_boss.cpp in Sources */,
 				08EAD9851C0BAED800EB036D /* spell.cpp in Sources */,
 				08EAD99D1C0BAEF000EB036D /* orc.cpp in Sources */,
 				08EAD9911C0BAEE200EB036D /* warrior.cpp in Sources */,
 				08EAD99B1C0BAEF000EB036D /* dwarf.cpp in Sources */,
+				08EAD9A81C0BB3BE00EB036D /* special_place.cpp in Sources */,
+				08EAD9A51C0BB3AE00EB036D /* place.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
