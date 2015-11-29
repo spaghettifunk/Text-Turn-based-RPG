@@ -10,10 +10,26 @@
 #define place_hpp
 
 #include <stdio.h>
+#include <string>
 
 class Place
 {
-
+private:
+    std::string name = "";
+    
+public:
+    Place(std::string);
+    Place(const Place&);
+    ~Place();
+    
+    Place& operator=(const Place&);
+    
+    friend bool operator!=(const Place&, const Place&);
+    friend bool operator==(const Place&, const Place&);
+    
+    // methods
+    void SetName(std::string);
+    
 };
 
 #endif /* place_hpp */

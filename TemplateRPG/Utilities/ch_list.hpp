@@ -16,6 +16,7 @@
 #include "item.hpp"
 #include "armour.hpp"
 #include "spell.hpp"
+#include "place.hpp"
 
 template<class T>
 class List

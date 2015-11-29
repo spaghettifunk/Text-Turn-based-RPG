@@ -119,3 +119,41 @@ int List<Spell>::Size() { return (int)list.size(); }
 
 template<>
 Spell& List<Spell>::GetItem(int index) { return list[index]; }
+
+// ****************************************************************************************************
+// PLACES
+// ****************************************************************************************************
+template<>
+List<Place>::List() { }
+
+template<>
+List<Place>::~List() { }
+
+template<>
+void List<Place>::Insert(Place& item) {
+    list.push_back(item);
+}
+
+template<>
+void List<Place>::Remove(Place& item)
+{
+    int index = -1;
+    for(std::vector<int>::size_type i = 0; i != list.size(); i++) {
+        Place temp = list[i];
+        if (temp == item) {
+            index = (int)i;
+            break;
+        }
+    }
+    
+    list.erase(list.begin() + index);
+}
+
+template<>
+bool List<Place>::IsEmpty() { return list.empty(); }
+
+template<>
+int List<Place>::Size() { return (int)list.size(); }
+
+template<>
+Place& List<Place>::GetItem(int index) { return list[index]; }

@@ -7,3 +7,28 @@
 //
 
 #include "place.hpp"
+
+Place::Place(std::string n) : name(n) { }
+Place::Place(const Place& it): name(it.name) { }
+Place::~Place() { }
+
+Place& Place::operator=(const Place& item)
+{
+    if(this == &item)
+        return *this;
+    
+    // update values here
+    name = item.name;
+    
+    return *this;
+}
+
+bool operator==(const Place& it1, const Place& it2)
+{
+    return it1.name == it2.name;
+}
+
+bool operator!=(const Place& it1, const Place& it2)
+{
+    return it1.name != it2.name;
+}
