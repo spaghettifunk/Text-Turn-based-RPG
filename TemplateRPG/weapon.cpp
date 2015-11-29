@@ -8,6 +8,11 @@
 
 #include "weapon.hpp"
 
+Weapon::Weapon() { }
+Weapon::~Weapon(){ }
+
+Weapon::Weapon(std::string n) : name(n) { }
+
 Weapon& Weapon::operator=(const Weapon& w)
 {
     if(this == &w)

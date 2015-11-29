@@ -8,17 +8,9 @@
 
 #include "armour.hpp"
 
-Armour::Armour(std::string n)
-{
-    // initialized values
-    name = n;
-}
-
-Armour::Armour(const Armour& a)
-{
-    // update values
-    name = a.name;
-}
+Armour::Armour(std::string n) : name(n) { }
+Armour::Armour(const Armour& a): name(a.name) { }
+Armour::~Armour() { }
 
 bool operator==(const Armour& it1, const Armour& it2)
 {

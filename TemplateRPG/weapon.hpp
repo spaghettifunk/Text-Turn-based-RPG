@@ -15,9 +15,15 @@
 class Weapon
 {
 private:
+    
     std::string name = "";
+    int lifetime = 100;
     
 public:
+    Weapon();
+    Weapon(std::string);
+    ~Weapon();
+    
     Weapon& operator=(const Weapon&);
 };
 

@@ -29,8 +29,8 @@ private:
     
     Gender ch_gender;   // either Female or Male
     
-    Ch_Class ch_class;  // class of character: Warrior/Mage/Necromance
-    CH_Type ch_type;    // type of character: Human/Orc/Dwarf
+    Ch_Class* ch_class;  // class of character: Warrior/Mage/Necromance
+    CH_Type* ch_type;    // type of character: Human/Orc/Dwarf
     
     List<Armour> armour; // list of pieces for the armour
     List<Item> bag;  // list of the items in the bag

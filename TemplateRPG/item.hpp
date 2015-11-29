@@ -21,6 +21,7 @@ private:
 public:
     Item(std::string);
     Item(const Item&);
+    ~Item();
     
     Item& operator=(const Item&);
     

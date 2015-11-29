@@ -8,17 +8,9 @@
 
 #include "item.hpp"
 
-Item::Item(std::string n)
-{
-    // initialize values here
-    name = n;
-}
-
-Item::Item(const Item& it)
-{
-    // update values here
-    name = it.name;
-}
+Item::Item(std::string n) : name(n) { }
+Item::Item(const Item& it): name(it.name) { }
+Item::~Item() { }
 
 Item& Item::operator=(const Item& item)
 {

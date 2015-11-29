@@ -20,6 +20,7 @@ private:
 public:
     Armour(std::string);
     Armour(const Armour&);
+    ~Armour();
     
     Armour& Next();
     Armour& operator=(const Armour&);

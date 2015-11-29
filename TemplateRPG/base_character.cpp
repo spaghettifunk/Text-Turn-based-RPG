@@ -18,8 +18,8 @@ Base_Character::~Base_Character() { }
 
 void Base_Character::InitializeCharacter(Ch_Class& c, CH_Type& t, Gender g)
 {
-    this->ch_class = c;
-    this->ch_type = t;
+    this->ch_class = &c;
+    this->ch_type = &t;
     this->ch_gender = g;
 }
 
