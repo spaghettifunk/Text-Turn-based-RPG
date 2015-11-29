@@ -45,3 +45,4 @@ void Weapon::SetDuration(int d)
 void Weapon::SetDurationFactor(int factor) { this->duration_factor = factor; }
 void Weapon::SetName(std::string name) { this->name = name; }
 void Weapon::SetType(WeaponType t) { this->w_type = t; }
+void Weapon::SetDamage(int d) { this->damage = d; }

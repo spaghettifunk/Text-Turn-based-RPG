@@ -24,6 +24,9 @@ private:
     
     Part body_part; // define the body part of the armour
     
+    // stats here
+    int defense_factor = 1;
+    
 public:
     Armour(std::string);
     Armour(const Armour&);
@@ -40,6 +43,7 @@ public:
     void SetDuration(int);
     void SetDurationFactor(int);
     void SetPart(Part);
+    void SetDefenseFactor(int);
 };
 
 #endif /* armour_hpp */

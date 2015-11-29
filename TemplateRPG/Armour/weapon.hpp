@@ -19,11 +19,12 @@ class Weapon
 private:
     
     std::string name = "";  // weapon name
+    WeaponType w_type;  // define the type of weapon
     
+    // stats here
     int duration = 100; // length of lifetime
     int duration_factor = 1;    // define the factory of duration time
-    
-    WeaponType w_type;  // define the type of weapon
+    int damage = 10;
     
 public:
     Weapon(std::string);
@@ -37,6 +38,7 @@ public:
     void SetDuration(int);
     void SetDurationFactor(int);
     void SetType(WeaponType);
+    void SetDamage(int);
 };
 
 #endif /* weapon_hpp */

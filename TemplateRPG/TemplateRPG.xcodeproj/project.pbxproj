@@ -8,23 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		08E2C7AB1C0A1D6E0096E791 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7AA1C0A1D6E0096E791 /* main.cpp */; };
-		08E2C7B41C0A241A0096E791 /* base_character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7B21C0A241A0096E791 /* base_character.cpp */; };
-		08E2C7B81C0A243A0096E791 /* ch_class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7B61C0A243A0096E791 /* ch_class.cpp */; };
-		08E2C7BD1C0A246D0096E791 /* human.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7BB1C0A246D0096E791 /* human.cpp */; };
-		08E2C7C01C0A24770096E791 /* orc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7BE1C0A24770096E791 /* orc.cpp */; };
-		08E2C7C31C0A24830096E791 /* dwarf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7C11C0A24830096E791 /* dwarf.cpp */; };
-		08E2C7C61C0A24910096E791 /* warrior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7C41C0A24910096E791 /* warrior.cpp */; };
-		08E2C7C91C0A249C0096E791 /* mage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7C71C0A249C0096E791 /* mage.cpp */; };
-		08E2C7CC1C0A24AA0096E791 /* necromance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7CA1C0A24AA0096E791 /* necromance.cpp */; };
-		08E2C7D01C0A24E20096E791 /* armour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7CE1C0A24E20096E791 /* armour.cpp */; };
-		08E2C7D31C0A24EE0096E791 /* weapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7D11C0A24EE0096E791 /* weapon.cpp */; };
-		08E2C7D71C0A25080096E791 /* item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7D51C0A25080096E791 /* item.cpp */; };
-		08E2C7DB1C0A251C0096E791 /* life_items.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7D91C0A251C0096E791 /* life_items.cpp */; };
-		08E2C7DE1C0A25270096E791 /* other_items.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7DC1C0A25270096E791 /* other_items.cpp */; };
-		08E2C7E11C0A25330096E791 /* mission_items.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7DF1C0A25330096E791 /* mission_items.cpp */; };
-		08E2C7E61C0A29630096E791 /* ch_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7E41C0A29630096E791 /* ch_type.cpp */; };
-		08E2C7E91C0A2B240096E791 /* ch_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7E71C0A2B240096E791 /* ch_list.cpp */; };
-		08E2C7EE1C0B75810096E791 /* spell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7EC1C0B75810096E791 /* spell.cpp */; };
+		08EAD9621C0BAE6900EB036D /* npc_boss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9601C0BAE6900EB036D /* npc_boss.cpp */; };
+		08EAD9631C0BAE6900EB036D /* npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9611C0BAE6900EB036D /* npc.cpp */; };
+		08EAD9681C0BAE8000EB036D /* battle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9661C0BAE8000EB036D /* battle.cpp */; };
+		08EAD9691C0BAE8000EB036D /* turn_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9671C0BAE8000EB036D /* turn_base.cpp */; };
+		08EAD96D1C0BAE8B00EB036D /* ch_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD96C1C0BAE8B00EB036D /* ch_list.cpp */; };
+		08EAD9741C0BAEA300EB036D /* life_items.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9711C0BAEA300EB036D /* life_items.cpp */; };
+		08EAD9751C0BAEA300EB036D /* mission_items.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9721C0BAEA300EB036D /* mission_items.cpp */; };
+		08EAD9761C0BAEA300EB036D /* other_items.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9731C0BAEA300EB036D /* other_items.cpp */; };
+		08EAD9791C0BAEAD00EB036D /* item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9781C0BAEAD00EB036D /* item.cpp */; };
+		08EAD97E1C0BAEB900EB036D /* armour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD97C1C0BAEB900EB036D /* armour.cpp */; };
+		08EAD97F1C0BAEB900EB036D /* weapon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD97D1C0BAEB900EB036D /* weapon.cpp */; };
+		08EAD9821C0BAECC00EB036D /* base_character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9811C0BAECC00EB036D /* base_character.cpp */; };
+		08EAD9851C0BAED800EB036D /* spell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9841C0BAED800EB036D /* spell.cpp */; };
+		08EAD98E1C0BAEE200EB036D /* ch_class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD98A1C0BAEE200EB036D /* ch_class.cpp */; };
+		08EAD98F1C0BAEE200EB036D /* mage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD98B1C0BAEE200EB036D /* mage.cpp */; };
+		08EAD9901C0BAEE200EB036D /* necromance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD98C1C0BAEE200EB036D /* necromance.cpp */; };
+		08EAD9911C0BAEE200EB036D /* warrior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD98D1C0BAEE200EB036D /* warrior.cpp */; };
+		08EAD99A1C0BAEF000EB036D /* ch_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9961C0BAEF000EB036D /* ch_type.cpp */; };
+		08EAD99B1C0BAEF000EB036D /* dwarf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9971C0BAEF000EB036D /* dwarf.cpp */; };
+		08EAD99C1C0BAEF000EB036D /* human.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9981C0BAEF000EB036D /* human.cpp */; };
+		08EAD99D1C0BAEF000EB036D /* orc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9991C0BAEF000EB036D /* orc.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,41 +46,49 @@
 /* Begin PBXFileReference section */
 		08E2C7A71C0A1D6E0096E791 /* TemplateRPG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TemplateRPG; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E2C7AA1C0A1D6E0096E791 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		08E2C7B21C0A241A0096E791 /* base_character.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = base_character.cpp; sourceTree = "<group>"; };
-		08E2C7B31C0A241A0096E791 /* base_character.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base_character.hpp; sourceTree = "<group>"; };
-		08E2C7B61C0A243A0096E791 /* ch_class.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ch_class.cpp; sourceTree = "<group>"; };
-		08E2C7B71C0A243A0096E791 /* ch_class.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ch_class.hpp; sourceTree = "<group>"; };
-		08E2C7BB1C0A246D0096E791 /* human.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = human.cpp; sourceTree = "<group>"; };
-		08E2C7BC1C0A246D0096E791 /* human.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = human.hpp; sourceTree = "<group>"; };
-		08E2C7BE1C0A24770096E791 /* orc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = orc.cpp; sourceTree = "<group>"; };
-		08E2C7BF1C0A24770096E791 /* orc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = orc.hpp; sourceTree = "<group>"; };
-		08E2C7C11C0A24830096E791 /* dwarf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dwarf.cpp; sourceTree = "<group>"; };
-		08E2C7C21C0A24830096E791 /* dwarf.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dwarf.hpp; sourceTree = "<group>"; };
-		08E2C7C41C0A24910096E791 /* warrior.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = warrior.cpp; sourceTree = "<group>"; };
-		08E2C7C51C0A24910096E791 /* warrior.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = warrior.hpp; sourceTree = "<group>"; };
-		08E2C7C71C0A249C0096E791 /* mage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mage.cpp; sourceTree = "<group>"; };
-		08E2C7C81C0A249C0096E791 /* mage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mage.hpp; sourceTree = "<group>"; };
-		08E2C7CA1C0A24AA0096E791 /* necromance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = necromance.cpp; sourceTree = "<group>"; };
-		08E2C7CB1C0A24AA0096E791 /* necromance.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = necromance.hpp; sourceTree = "<group>"; };
-		08E2C7CE1C0A24E20096E791 /* armour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = armour.cpp; sourceTree = "<group>"; };
-		08E2C7CF1C0A24E20096E791 /* armour.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = armour.hpp; sourceTree = "<group>"; };
-		08E2C7D11C0A24EE0096E791 /* weapon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = weapon.cpp; sourceTree = "<group>"; };
-		08E2C7D21C0A24EE0096E791 /* weapon.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = weapon.hpp; sourceTree = "<group>"; };
-		08E2C7D51C0A25080096E791 /* item.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = item.cpp; sourceTree = "<group>"; };
-		08E2C7D61C0A25080096E791 /* item.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = item.hpp; sourceTree = "<group>"; };
-		08E2C7D91C0A251C0096E791 /* life_items.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = life_items.cpp; sourceTree = "<group>"; };
-		08E2C7DA1C0A251C0096E791 /* life_items.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = life_items.hpp; sourceTree = "<group>"; };
-		08E2C7DC1C0A25270096E791 /* other_items.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = other_items.cpp; sourceTree = "<group>"; };
-		08E2C7DD1C0A25270096E791 /* other_items.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = other_items.hpp; sourceTree = "<group>"; };
-		08E2C7DF1C0A25330096E791 /* mission_items.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mission_items.cpp; sourceTree = "<group>"; };
-		08E2C7E01C0A25330096E791 /* mission_items.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mission_items.hpp; sourceTree = "<group>"; };
-		08E2C7E31C0A256A0096E791 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
-		08E2C7E41C0A29630096E791 /* ch_type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ch_type.cpp; sourceTree = "<group>"; };
-		08E2C7E51C0A29630096E791 /* ch_type.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ch_type.hpp; sourceTree = "<group>"; };
-		08E2C7E71C0A2B240096E791 /* ch_list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ch_list.cpp; sourceTree = "<group>"; };
-		08E2C7E81C0A2B240096E791 /* ch_list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ch_list.hpp; sourceTree = "<group>"; };
-		08E2C7EC1C0B75810096E791 /* spell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spell.cpp; sourceTree = "<group>"; };
-		08E2C7ED1C0B75810096E791 /* spell.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = spell.hpp; sourceTree = "<group>"; };
+		08EAD95E1C0BAE6900EB036D /* npc_boss.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = npc_boss.hpp; path = NPC/npc_boss.hpp; sourceTree = "<group>"; };
+		08EAD95F1C0BAE6900EB036D /* npc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = npc.hpp; path = NPC/npc.hpp; sourceTree = "<group>"; };
+		08EAD9601C0BAE6900EB036D /* npc_boss.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = npc_boss.cpp; path = NPC/npc_boss.cpp; sourceTree = "<group>"; };
+		08EAD9611C0BAE6900EB036D /* npc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = npc.cpp; path = NPC/npc.cpp; sourceTree = "<group>"; };
+		08EAD9641C0BAE8000EB036D /* battle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = battle.hpp; path = "Turn-base/battle.hpp"; sourceTree = "<group>"; };
+		08EAD9651C0BAE8000EB036D /* turn_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = turn_base.hpp; path = "Turn-base/turn_base.hpp"; sourceTree = "<group>"; };
+		08EAD9661C0BAE8000EB036D /* battle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = battle.cpp; path = "Turn-base/battle.cpp"; sourceTree = "<group>"; };
+		08EAD9671C0BAE8000EB036D /* turn_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = turn_base.cpp; path = "Turn-base/turn_base.cpp"; sourceTree = "<group>"; };
+		08EAD96A1C0BAE8B00EB036D /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = constants.h; path = Utilities/constants.h; sourceTree = "<group>"; };
+		08EAD96B1C0BAE8B00EB036D /* ch_list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ch_list.hpp; path = Utilities/ch_list.hpp; sourceTree = "<group>"; };
+		08EAD96C1C0BAE8B00EB036D /* ch_list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ch_list.cpp; path = Utilities/ch_list.cpp; sourceTree = "<group>"; };
+		08EAD96E1C0BAEA300EB036D /* life_items.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = life_items.hpp; path = Items/special/life_items.hpp; sourceTree = "<group>"; };
+		08EAD96F1C0BAEA300EB036D /* mission_items.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = mission_items.hpp; path = Items/special/mission_items.hpp; sourceTree = "<group>"; };
+		08EAD9701C0BAEA300EB036D /* other_items.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = other_items.hpp; path = Items/special/other_items.hpp; sourceTree = "<group>"; };
+		08EAD9711C0BAEA300EB036D /* life_items.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = life_items.cpp; path = Items/special/life_items.cpp; sourceTree = "<group>"; };
+		08EAD9721C0BAEA300EB036D /* mission_items.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mission_items.cpp; path = Items/special/mission_items.cpp; sourceTree = "<group>"; };
+		08EAD9731C0BAEA300EB036D /* other_items.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = other_items.cpp; path = Items/special/other_items.cpp; sourceTree = "<group>"; };
+		08EAD9771C0BAEAD00EB036D /* item.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = item.hpp; path = Items/item.hpp; sourceTree = "<group>"; };
+		08EAD9781C0BAEAD00EB036D /* item.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = item.cpp; path = Items/item.cpp; sourceTree = "<group>"; };
+		08EAD97A1C0BAEB900EB036D /* armour.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = armour.hpp; path = Armour/armour.hpp; sourceTree = "<group>"; };
+		08EAD97B1C0BAEB900EB036D /* weapon.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = weapon.hpp; path = Armour/weapon.hpp; sourceTree = "<group>"; };
+		08EAD97C1C0BAEB900EB036D /* armour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = armour.cpp; path = Armour/armour.cpp; sourceTree = "<group>"; };
+		08EAD97D1C0BAEB900EB036D /* weapon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = weapon.cpp; path = Armour/weapon.cpp; sourceTree = "<group>"; };
+		08EAD9801C0BAECC00EB036D /* base_character.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = base_character.hpp; path = Character/base_character.hpp; sourceTree = "<group>"; };
+		08EAD9811C0BAECC00EB036D /* base_character.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = base_character.cpp; path = Character/base_character.cpp; sourceTree = "<group>"; };
+		08EAD9831C0BAED800EB036D /* spell.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = spell.hpp; path = Character/spells/spell.hpp; sourceTree = "<group>"; };
+		08EAD9841C0BAED800EB036D /* spell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = spell.cpp; path = Character/spells/spell.cpp; sourceTree = "<group>"; };
+		08EAD9861C0BAEE200EB036D /* ch_class.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ch_class.hpp; path = Character/class/ch_class.hpp; sourceTree = "<group>"; };
+		08EAD9871C0BAEE200EB036D /* mage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = mage.hpp; path = Character/class/mage.hpp; sourceTree = "<group>"; };
+		08EAD9881C0BAEE200EB036D /* necromance.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = necromance.hpp; path = Character/class/necromance.hpp; sourceTree = "<group>"; };
+		08EAD9891C0BAEE200EB036D /* warrior.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = warrior.hpp; path = Character/class/warrior.hpp; sourceTree = "<group>"; };
+		08EAD98A1C0BAEE200EB036D /* ch_class.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ch_class.cpp; path = Character/class/ch_class.cpp; sourceTree = "<group>"; };
+		08EAD98B1C0BAEE200EB036D /* mage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mage.cpp; path = Character/class/mage.cpp; sourceTree = "<group>"; };
+		08EAD98C1C0BAEE200EB036D /* necromance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = necromance.cpp; path = Character/class/necromance.cpp; sourceTree = "<group>"; };
+		08EAD98D1C0BAEE200EB036D /* warrior.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = warrior.cpp; path = Character/class/warrior.cpp; sourceTree = "<group>"; };
+		08EAD9921C0BAEF000EB036D /* ch_type.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ch_type.hpp; path = Character/type/ch_type.hpp; sourceTree = "<group>"; };
+		08EAD9931C0BAEF000EB036D /* dwarf.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = dwarf.hpp; path = Character/type/dwarf.hpp; sourceTree = "<group>"; };
+		08EAD9941C0BAEF000EB036D /* human.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = human.hpp; path = Character/type/human.hpp; sourceTree = "<group>"; };
+		08EAD9951C0BAEF000EB036D /* orc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = orc.hpp; path = Character/type/orc.hpp; sourceTree = "<group>"; };
+		08EAD9961C0BAEF000EB036D /* ch_type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ch_type.cpp; path = Character/type/ch_type.cpp; sourceTree = "<group>"; };
+		08EAD9971C0BAEF000EB036D /* dwarf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dwarf.cpp; path = Character/type/dwarf.cpp; sourceTree = "<group>"; };
+		08EAD9981C0BAEF000EB036D /* human.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = human.cpp; path = Character/type/human.cpp; sourceTree = "<group>"; };
+		08EAD9991C0BAEF000EB036D /* orc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = orc.cpp; path = Character/type/orc.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +105,8 @@
 		08E2C79E1C0A1D6E0096E791 = {
 			isa = PBXGroup;
 			children = (
+				08E2C7F31C0B97070096E791 /* NPC */,
+				08E2C7EF1C0B96440096E791 /* Turn-base */,
 				08E2C7E21C0A25570096E791 /* Utilities */,
 				08E2C7D41C0A24F50096E791 /* Items */,
 				08E2C7CD1C0A24BD0096E791 /* Armour */,
@@ -121,9 +135,9 @@
 		08E2C7B11C0A23ED0096E791 /* Character */ = {
 			isa = PBXGroup;
 			children = (
+				08EAD9801C0BAECC00EB036D /* base_character.hpp */,
+				08EAD9811C0BAECC00EB036D /* base_character.cpp */,
 				08E2C7B51C0A24230096E791 /* special */,
-				08E2C7B21C0A241A0096E791 /* base_character.cpp */,
-				08E2C7B31C0A241A0096E791 /* base_character.hpp */,
 			);
 			name = Character;
 			sourceTree = "<group>";
@@ -141,14 +155,14 @@
 		08E2C7B91C0A24430096E791 /* type */ = {
 			isa = PBXGroup;
 			children = (
-				08E2C7BB1C0A246D0096E791 /* human.cpp */,
-				08E2C7BC1C0A246D0096E791 /* human.hpp */,
-				08E2C7BE1C0A24770096E791 /* orc.cpp */,
-				08E2C7BF1C0A24770096E791 /* orc.hpp */,
-				08E2C7C11C0A24830096E791 /* dwarf.cpp */,
-				08E2C7C21C0A24830096E791 /* dwarf.hpp */,
-				08E2C7E41C0A29630096E791 /* ch_type.cpp */,
-				08E2C7E51C0A29630096E791 /* ch_type.hpp */,
+				08EAD9921C0BAEF000EB036D /* ch_type.hpp */,
+				08EAD9931C0BAEF000EB036D /* dwarf.hpp */,
+				08EAD9941C0BAEF000EB036D /* human.hpp */,
+				08EAD9951C0BAEF000EB036D /* orc.hpp */,
+				08EAD9961C0BAEF000EB036D /* ch_type.cpp */,
+				08EAD9971C0BAEF000EB036D /* dwarf.cpp */,
+				08EAD9981C0BAEF000EB036D /* human.cpp */,
+				08EAD9991C0BAEF000EB036D /* orc.cpp */,
 			);
 			name = type;
 			sourceTree = "<group>";
@@ -156,14 +170,14 @@
 		08E2C7BA1C0A24550096E791 /* class */ = {
 			isa = PBXGroup;
 			children = (
-				08E2C7B61C0A243A0096E791 /* ch_class.cpp */,
-				08E2C7B71C0A243A0096E791 /* ch_class.hpp */,
-				08E2C7C41C0A24910096E791 /* warrior.cpp */,
-				08E2C7C51C0A24910096E791 /* warrior.hpp */,
-				08E2C7C71C0A249C0096E791 /* mage.cpp */,
-				08E2C7C81C0A249C0096E791 /* mage.hpp */,
-				08E2C7CA1C0A24AA0096E791 /* necromance.cpp */,
-				08E2C7CB1C0A24AA0096E791 /* necromance.hpp */,
+				08EAD9861C0BAEE200EB036D /* ch_class.hpp */,
+				08EAD9871C0BAEE200EB036D /* mage.hpp */,
+				08EAD9881C0BAEE200EB036D /* necromance.hpp */,
+				08EAD9891C0BAEE200EB036D /* warrior.hpp */,
+				08EAD98A1C0BAEE200EB036D /* ch_class.cpp */,
+				08EAD98B1C0BAEE200EB036D /* mage.cpp */,
+				08EAD98C1C0BAEE200EB036D /* necromance.cpp */,
+				08EAD98D1C0BAEE200EB036D /* warrior.cpp */,
 			);
 			name = class;
 			sourceTree = "<group>";
@@ -171,10 +185,10 @@
 		08E2C7CD1C0A24BD0096E791 /* Armour */ = {
 			isa = PBXGroup;
 			children = (
-				08E2C7CE1C0A24E20096E791 /* armour.cpp */,
-				08E2C7CF1C0A24E20096E791 /* armour.hpp */,
-				08E2C7D11C0A24EE0096E791 /* weapon.cpp */,
-				08E2C7D21C0A24EE0096E791 /* weapon.hpp */,
+				08EAD97A1C0BAEB900EB036D /* armour.hpp */,
+				08EAD97B1C0BAEB900EB036D /* weapon.hpp */,
+				08EAD97C1C0BAEB900EB036D /* armour.cpp */,
+				08EAD97D1C0BAEB900EB036D /* weapon.cpp */,
 			);
 			name = Armour;
 			sourceTree = "<group>";
@@ -182,9 +196,9 @@
 		08E2C7D41C0A24F50096E791 /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				08EAD9771C0BAEAD00EB036D /* item.hpp */,
+				08EAD9781C0BAEAD00EB036D /* item.cpp */,
 				08E2C7D81C0A250B0096E791 /* special */,
-				08E2C7D51C0A25080096E791 /* item.cpp */,
-				08E2C7D61C0A25080096E791 /* item.hpp */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -192,12 +206,12 @@
 		08E2C7D81C0A250B0096E791 /* special */ = {
 			isa = PBXGroup;
 			children = (
-				08E2C7D91C0A251C0096E791 /* life_items.cpp */,
-				08E2C7DA1C0A251C0096E791 /* life_items.hpp */,
-				08E2C7DC1C0A25270096E791 /* other_items.cpp */,
-				08E2C7DD1C0A25270096E791 /* other_items.hpp */,
-				08E2C7DF1C0A25330096E791 /* mission_items.cpp */,
-				08E2C7E01C0A25330096E791 /* mission_items.hpp */,
+				08EAD96E1C0BAEA300EB036D /* life_items.hpp */,
+				08EAD96F1C0BAEA300EB036D /* mission_items.hpp */,
+				08EAD9701C0BAEA300EB036D /* other_items.hpp */,
+				08EAD9711C0BAEA300EB036D /* life_items.cpp */,
+				08EAD9721C0BAEA300EB036D /* mission_items.cpp */,
+				08EAD9731C0BAEA300EB036D /* other_items.cpp */,
 			);
 			name = special;
 			sourceTree = "<group>";
@@ -205,9 +219,9 @@
 		08E2C7E21C0A25570096E791 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				08E2C7E31C0A256A0096E791 /* constants.h */,
-				08E2C7E71C0A2B240096E791 /* ch_list.cpp */,
-				08E2C7E81C0A2B240096E791 /* ch_list.hpp */,
+				08EAD96A1C0BAE8B00EB036D /* constants.h */,
+				08EAD96B1C0BAE8B00EB036D /* ch_list.hpp */,
+				08EAD96C1C0BAE8B00EB036D /* ch_list.cpp */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -215,10 +229,32 @@
 		08E2C7EB1C0B75540096E791 /* spells */ = {
 			isa = PBXGroup;
 			children = (
-				08E2C7EC1C0B75810096E791 /* spell.cpp */,
-				08E2C7ED1C0B75810096E791 /* spell.hpp */,
+				08EAD9831C0BAED800EB036D /* spell.hpp */,
+				08EAD9841C0BAED800EB036D /* spell.cpp */,
 			);
 			name = spells;
+			sourceTree = "<group>";
+		};
+		08E2C7EF1C0B96440096E791 /* Turn-base */ = {
+			isa = PBXGroup;
+			children = (
+				08EAD9641C0BAE8000EB036D /* battle.hpp */,
+				08EAD9651C0BAE8000EB036D /* turn_base.hpp */,
+				08EAD9661C0BAE8000EB036D /* battle.cpp */,
+				08EAD9671C0BAE8000EB036D /* turn_base.cpp */,
+			);
+			name = "Turn-base";
+			sourceTree = "<group>";
+		};
+		08E2C7F31C0B97070096E791 /* NPC */ = {
+			isa = PBXGroup;
+			children = (
+				08EAD95E1C0BAE6900EB036D /* npc_boss.hpp */,
+				08EAD95F1C0BAE6900EB036D /* npc.hpp */,
+				08EAD9601C0BAE6900EB036D /* npc_boss.cpp */,
+				08EAD9611C0BAE6900EB036D /* npc.cpp */,
+			);
+			name = NPC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,24 +313,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08E2C7B81C0A243A0096E791 /* ch_class.cpp in Sources */,
-				08E2C7E91C0A2B240096E791 /* ch_list.cpp in Sources */,
-				08E2C7D01C0A24E20096E791 /* armour.cpp in Sources */,
-				08E2C7CC1C0A24AA0096E791 /* necromance.cpp in Sources */,
-				08E2C7B41C0A241A0096E791 /* base_character.cpp in Sources */,
+				08EAD96D1C0BAE8B00EB036D /* ch_list.cpp in Sources */,
+				08EAD9741C0BAEA300EB036D /* life_items.cpp in Sources */,
+				08EAD9751C0BAEA300EB036D /* mission_items.cpp in Sources */,
+				08EAD9681C0BAE8000EB036D /* battle.cpp in Sources */,
 				08E2C7AB1C0A1D6E0096E791 /* main.cpp in Sources */,
-				08E2C7C91C0A249C0096E791 /* mage.cpp in Sources */,
-				08E2C7D31C0A24EE0096E791 /* weapon.cpp in Sources */,
-				08E2C7C61C0A24910096E791 /* warrior.cpp in Sources */,
-				08E2C7E61C0A29630096E791 /* ch_type.cpp in Sources */,
-				08E2C7EE1C0B75810096E791 /* spell.cpp in Sources */,
-				08E2C7E11C0A25330096E791 /* mission_items.cpp in Sources */,
-				08E2C7D71C0A25080096E791 /* item.cpp in Sources */,
-				08E2C7DE1C0A25270096E791 /* other_items.cpp in Sources */,
-				08E2C7DB1C0A251C0096E791 /* life_items.cpp in Sources */,
-				08E2C7BD1C0A246D0096E791 /* human.cpp in Sources */,
-				08E2C7C31C0A24830096E791 /* dwarf.cpp in Sources */,
-				08E2C7C01C0A24770096E791 /* orc.cpp in Sources */,
+				08EAD9691C0BAE8000EB036D /* turn_base.cpp in Sources */,
+				08EAD98E1C0BAEE200EB036D /* ch_class.cpp in Sources */,
+				08EAD9631C0BAE6900EB036D /* npc.cpp in Sources */,
+				08EAD98F1C0BAEE200EB036D /* mage.cpp in Sources */,
+				08EAD9821C0BAECC00EB036D /* base_character.cpp in Sources */,
+				08EAD97E1C0BAEB900EB036D /* armour.cpp in Sources */,
+				08EAD97F1C0BAEB900EB036D /* weapon.cpp in Sources */,
+				08EAD99C1C0BAEF000EB036D /* human.cpp in Sources */,
+				08EAD99A1C0BAEF000EB036D /* ch_type.cpp in Sources */,
+				08EAD9901C0BAEE200EB036D /* necromance.cpp in Sources */,
+				08EAD9761C0BAEA300EB036D /* other_items.cpp in Sources */,
+				08EAD9791C0BAEAD00EB036D /* item.cpp in Sources */,
+				08EAD9621C0BAE6900EB036D /* npc_boss.cpp in Sources */,
+				08EAD9851C0BAED800EB036D /* spell.cpp in Sources */,
+				08EAD99D1C0BAEF000EB036D /* orc.cpp in Sources */,
+				08EAD9911C0BAEE200EB036D /* warrior.cpp in Sources */,
+				08EAD99B1C0BAEF000EB036D /* dwarf.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +453,7 @@
 				08E2C7B01C0A1D6E0096E791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

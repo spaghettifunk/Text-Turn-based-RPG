@@ -55,3 +55,4 @@ void Armour::SetDuration(int d)
 void Armour::SetDurationFactor(int factor) { this->duration_factor = factor; }
 void Armour::SetName(std::string name) { this->name = name; }
 void Armour::SetPart(Part p) { this->body_part = p; }
+void Armour::SetDefenseFactor(int df) { this->defense_factor = df; }

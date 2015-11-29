@@ -15,6 +15,7 @@
 
 #include "item.hpp"
 #include "armour.hpp"
+#include "spell.hpp"
 
 template<class T>
 class List
@@ -28,6 +29,7 @@ public:
     void Insert(T&);
     void Remove(T&);
     bool IsEmpty();
+    T& GetItem(int);
     int Size();
 };
 
