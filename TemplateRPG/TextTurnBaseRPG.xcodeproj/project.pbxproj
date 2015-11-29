@@ -34,6 +34,7 @@
 		08EAD9A81C0BB3BE00EB036D /* special_place.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9A61C0BB3BE00EB036D /* special_place.cpp */; };
 		08EAD9AC1C0BB4B900EB036D /* story.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9AA1C0BB4B900EB036D /* story.cpp */; };
 		08EAD9B01C0BB4E900EB036D /* dialogs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9AE1C0BB4E900EB036D /* dialogs.cpp */; };
+		08EAD9B31C0BB63F00EB036D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9B21C0BB63F00EB036D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,7 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		08E2C7A71C0A1D6E0096E791 /* TemplateRPG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TemplateRPG; sourceTree = BUILT_PRODUCTS_DIR; };
+		08E2C7A71C0A1D6E0096E791 /* TextTurnBaseRPG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TextTurnBaseRPG; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E2C7AA1C0A1D6E0096E791 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		08EAD95E1C0BAE6900EB036D /* npc_boss.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = npc_boss.hpp; path = NPC/npc_boss.hpp; sourceTree = "<group>"; };
 		08EAD95F1C0BAE6900EB036D /* npc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = npc.hpp; path = NPC/npc.hpp; sourceTree = "<group>"; };
@@ -104,6 +105,8 @@
 		08EAD9AB1C0BB4B900EB036D /* story.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = story.hpp; path = Story/story.hpp; sourceTree = "<group>"; };
 		08EAD9AE1C0BB4E900EB036D /* dialogs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dialogs.cpp; path = Story/dialogs/dialogs.cpp; sourceTree = "<group>"; };
 		08EAD9AF1C0BB4E900EB036D /* dialogs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = dialogs.hpp; path = Story/dialogs/dialogs.hpp; sourceTree = "<group>"; };
+		08EAD9B11C0BB63F00EB036D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		08EAD9B21C0BB63F00EB036D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 		08E2C79E1C0A1D6E0096E791 = {
 			isa = PBXGroup;
 			children = (
+				08EAD9B11C0BB63F00EB036D /* LICENSE */,
+				08EAD9B21C0BB63F00EB036D /* README.md */,
 				08EAD9A91C0BB4A400EB036D /* Story */,
 				08EAD99E1C0BB34900EB036D /* World */,
 				08E2C7F31C0B97070096E791 /* NPC */,
@@ -136,7 +141,7 @@
 		08E2C7A81C0A1D6E0096E791 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08E2C7A71C0A1D6E0096E791 /* TemplateRPG */,
+				08E2C7A71C0A1D6E0096E791 /* TextTurnBaseRPG */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -317,9 +322,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		08E2C7A61C0A1D6E0096E791 /* TemplateRPG */ = {
+		08E2C7A61C0A1D6E0096E791 /* TextTurnBaseRPG */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08E2C7AE1C0A1D6E0096E791 /* Build configuration list for PBXNativeTarget "TemplateRPG" */;
+			buildConfigurationList = 08E2C7AE1C0A1D6E0096E791 /* Build configuration list for PBXNativeTarget "TextTurnBaseRPG" */;
 			buildPhases = (
 				08E2C7A31C0A1D6E0096E791 /* Sources */,
 				08E2C7A41C0A1D6E0096E791 /* Frameworks */,
@@ -329,9 +334,9 @@
 			);
 			dependencies = (
 			);
-			name = TemplateRPG;
+			name = TextTurnBaseRPG;
 			productName = TemplateRPG;
-			productReference = 08E2C7A71C0A1D6E0096E791 /* TemplateRPG */;
+			productReference = 08E2C7A71C0A1D6E0096E791 /* TextTurnBaseRPG */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -348,7 +353,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 08E2C7A21C0A1D6E0096E791 /* Build configuration list for PBXProject "TemplateRPG" */;
+			buildConfigurationList = 08E2C7A21C0A1D6E0096E791 /* Build configuration list for PBXProject "TextTurnBaseRPG" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -360,7 +365,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				08E2C7A61C0A1D6E0096E791 /* TemplateRPG */,
+				08E2C7A61C0A1D6E0096E791 /* TextTurnBaseRPG */,
 			);
 		};
 /* End PBXProject section */
@@ -380,6 +385,7 @@
 				08EAD9631C0BAE6900EB036D /* npc.cpp in Sources */,
 				08EAD98F1C0BAEE200EB036D /* mage.cpp in Sources */,
 				08EAD9B01C0BB4E900EB036D /* dialogs.cpp in Sources */,
+				08EAD9B31C0BB63F00EB036D /* README.md in Sources */,
 				08EAD9821C0BAECC00EB036D /* base_character.cpp in Sources */,
 				08EAD97E1C0BAEB900EB036D /* armour.cpp in Sources */,
 				08EAD97F1C0BAEB900EB036D /* weapon.cpp in Sources */,
@@ -485,21 +491,21 @@
 		08E2C7AF1C0A1D6E0096E791 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TextTurnBaseRPG;
 			};
 			name = Debug;
 		};
 		08E2C7B01C0A1D6E0096E791 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TextTurnBaseRPG;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		08E2C7A21C0A1D6E0096E791 /* Build configuration list for PBXProject "TemplateRPG" */ = {
+		08E2C7A21C0A1D6E0096E791 /* Build configuration list for PBXProject "TextTurnBaseRPG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08E2C7AC1C0A1D6E0096E791 /* Debug */,
@@ -508,7 +514,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		08E2C7AE1C0A1D6E0096E791 /* Build configuration list for PBXNativeTarget "TemplateRPG" */ = {
+		08E2C7AE1C0A1D6E0096E791 /* Build configuration list for PBXNativeTarget "TextTurnBaseRPG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08E2C7AF1C0A1D6E0096E791 /* Debug */,
