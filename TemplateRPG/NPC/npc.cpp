@@ -9,7 +9,10 @@
 #include "npc.hpp"
 
 NPC::NPC(std::string n) : name(n) { this->spells_pool = *new List<Spell>(); }
-NPC::~NPC() { }
+NPC::~NPC()
+{
+    free(&this->spells_pool);
+}
 
 void NPC::SetStrength(int s) { this->strength = s; }
 void NPC::SetDefense(int d) { this->defense = d; }

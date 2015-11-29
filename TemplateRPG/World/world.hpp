@@ -16,8 +16,12 @@
 
 class World
 {
-protected:
+private:
     List<Place> world_places;
+    
+public:
+    World();
+    ~World();
 };
 
 #endif /* world_hpp */

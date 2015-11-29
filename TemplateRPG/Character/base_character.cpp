@@ -14,7 +14,14 @@ Base_Character::Base_Character()
     this->armour = *new List<Armour>();
 }
 
-Base_Character::~Base_Character() { }
+Base_Character::~Base_Character()
+{
+    free(&this->bag);
+    free(&this->armour);
+    free(this->ch_weapon);
+    free(this->ch_type);
+    free(this->ch_class);
+}
 
 void Base_Character::InitializeCharacter(Ch_Class& c, CH_Type& t, Gender g)
 {

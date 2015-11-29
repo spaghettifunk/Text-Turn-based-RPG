@@ -7,3 +7,9 @@
 //
 
 #include "world.hpp"
+
+World::World() { }
+World::~World()
+{
+    free(&this->world_places);
+}
