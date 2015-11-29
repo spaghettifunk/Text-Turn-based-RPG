@@ -9,35 +9,28 @@
 #ifndef ch_list_hpp
 #define ch_list_hpp
 
+#include <iostream>
 #include <stdio.h>
+#include <vector>
 
 #include "item.hpp"
 #include "armour.hpp"
 
-template <class T>
+template<class T>
 class List
 {
-    class node
-    {
-        T data;
-        node *next;
-    public:
-        node(T data, node *next = NULL) : data(data), next(next) { }
-        node* Next() { return next; }
-        T& GetElem() { return data; }
-    };
-    
-    node *head;
-    node *tail;
+private:
+    std::vector<T> list;
 public:
-    
     List();
     ~List();
     
-    void add(T&);
-    void remove(T&);
-    int size();
-    // etc.
+    void Insert(T&);
+    void Remove(T&);
+    bool IsEmpty();
+    int Size();
 };
+
+#include "ch_class.cpp"
 
 #endif /* ch_list_hpp */

@@ -8,7 +8,12 @@
 
 #include "base_character.hpp"
 
-Base_Character::Base_Character() { }
+Base_Character::Base_Character()
+{
+    this->bag = *new List<Item>();
+    this->armour = *new List<Armour>();
+}
+
 Base_Character::~Base_Character() { }
 
 void Base_Character::InitializeCharacter(Ch_Class& c, CH_Type& t, Gender g)
@@ -19,19 +24,34 @@ void Base_Character::InitializeCharacter(Ch_Class& c, CH_Type& t, Gender g)
 }
 
 // methods
-void Base_Character::AddItemBag(Item& item)
+void Base_Character::AddItemBag(Item item)
 {
-    this->bag.add(item);
+    this->bag.Insert(item);
 }
 
-void Base_Character::SetArmour(Armour& armour)
+void Base_Character::RemoveItemBag(Item item)
 {
-    this->armour.add(armour);
+    this->bag.Remove(item);
+}
+
+void Base_Character::SetArmour(Armour armour)
+{
+    this->armour.Insert(armour);
+}
+
+void Base_Character::RemoveArmour(Armour armour)
+{
+    this->armour.Remove(armour);
 }
 
 void Base_Character::SetWeapon(Weapon& weapon)
 {
-    this->ch_weapon = weapon;
+    this->ch_weapon = &weapon;
+}
+
+void Base_Character::RemoveWeapon()
+{
+    this->ch_weapon = nullptr;
 }
 
 // Apply damage to character

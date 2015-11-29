@@ -10,10 +10,15 @@
 #define weapon_hpp
 
 #include <stdio.h>
+#include <string>
 
 class Weapon
 {
+private:
+    std::string name = "";
     
+public:
+    Weapon& operator=(const Weapon&);
 };
 
 #endif /* weapon_hpp */

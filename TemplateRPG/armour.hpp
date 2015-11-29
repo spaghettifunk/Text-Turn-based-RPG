@@ -18,11 +18,13 @@ private:
     std::string name = "";
     int lifetime = 100;
 public:
+    Armour(std::string);
     Armour(const Armour&);
     
     Armour& Next();
     Armour& operator=(const Armour&);
     
+    friend bool operator==(const Armour&, const Armour&);
     friend bool operator!=(const Armour&, const Armour&);
     
     // methods

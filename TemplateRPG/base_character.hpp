@@ -35,7 +35,7 @@ private:
     List<Armour> armour; // list of pieces for the armour
     List<Item> bag;  // list of the items in the bag
     
-    Weapon ch_weapon;   // current weapon
+    Weapon* ch_weapon;   // current weapon
     
 public:
     Base_Character();
@@ -44,9 +44,15 @@ public:
     // methods
     void InitializeCharacter(Ch_Class&, CH_Type&, Gender);
     
-    void AddItemBag(Item&);
-    void SetArmour(Armour&);
+    void AddItemBag(Item);
+    void RemoveItemBag(Item);
+    
+    void SetArmour(Armour);
+    void RemoveArmour(Armour);
+    
     void SetWeapon(Weapon&);
+    void RemoveWeapon();
+    
     void Damage(int);
     void Cure(int);
     void AddMana(int);

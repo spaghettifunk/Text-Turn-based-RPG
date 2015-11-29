@@ -7,3 +7,14 @@
 //
 
 #include "weapon.hpp"
+
+Weapon& Weapon::operator=(const Weapon& w)
+{
+    if(this == &w)
+        return *this;
+    
+    // update values here
+    name = w.name;
+    
+    return *this;
+}

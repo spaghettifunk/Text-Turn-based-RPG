@@ -8,61 +8,66 @@
 
 #include "ch_list.hpp"
 
-template<class T> List<T>::List()
-{
-    this->head = nullptr;
-    this->tail = nullptr;
+// ITEM
+template<>
+List<Item>::List() { }
+
+template<>
+List<Item>::~List() { }
+
+template<>
+void List<Item>::Insert(Item& item) {
+    list.push_back(item);
 }
 
-template<class T> List<T>::~List()
+template<>
+void List<Item>::Remove(Item& item)
 {
-    T curr_item = this->head; // initialize current node to root
-    while (curr_item != nullptr)
-    {
-        T next_item = curr_item->Next();   // get next node
-        delete curr_item; // delete current
-        curr_item = next_item; // set current to "old" next
-    }
-}
-
-template<class T> void List<T>::add(T &i)
-{
-    this->tail->Next() = i;
-}
-
-template<class T> void List<T>::remove(T &item)
-{
-    T curr_item = this->head;
-    while (curr_item != nullptr) {
-        if (curr_item == item) {
-            delete curr_item;
+    int index = -1;
+    for(std::vector<int>::size_type i = 0; i != list.size(); i++) {
+        Item temp = list[i];
+        if (temp == item) {
+            index = (int)i;
             break;
         }
     }
+    
+    list.erase(list.begin() + index);
 }
 
-template<class T> int List<T>::size()
+template<>
+bool List<Item>::IsEmpty() { return list.empty(); }
+
+template<>
+int List<Item>::Size() { return (int)list.size(); }
+
+// ARMOUR
+template<>
+List<Armour>::List() { }
+
+template<>
+List<Armour>::~List() { }
+
+template<>
+void List<Armour>::Insert(Armour& item) { list.push_back(item); }
+
+template<>
+void List<Armour>::Remove(Armour& item)
 {
-    int size = 0;
-    T curr_item = this->head;
-    while (curr_item->Next() != nullptr) {
-        curr_item = &curr_item->Next();
-        size++;
+    int index = -1;
+    for(std::vector<int>::size_type i = 0; i != list.size(); i++) {
+        Armour temp = list[i];
+        if (temp == item) {
+            index = (int)i;
+            break;
+        }
     }
     
-    return size;
+    list.erase(list.begin() + index);
 }
 
-// specialized Item
-template<> List<Item>::List() { }
-template<> List<Item>::~List() { }
-template<> void List<Item>::add(Item& i) { }
-template<> void List<Item>::remove(Item& i){ }
-template<> int List<Item>::size() { return 0; }
+template<>
+bool List<Armour>::IsEmpty() { return list.empty(); }
 
-// specialize Armour
-template<> List<Armour>::List() { }
-template<> List<Armour>::~List() { }
-template<> void List<Armour>::add(Armour& i) { }
-template<> void List<Armour>::remove(Armour& i){ }
-template<> int List<Armour>::size() { return 0; }
+template<>
+int List<Armour>::Size() { return (int)list.size(); }

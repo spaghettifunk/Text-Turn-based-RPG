@@ -8,9 +8,26 @@
 
 #include "armour.hpp"
 
-Armour::Armour(const Armour&)
+Armour::Armour(std::string n)
+{
+    // initialized values
+    name = n;
+}
+
+Armour::Armour(const Armour& a)
 {
     // update values
+    name = a.name;
+}
+
+bool operator==(const Armour& it1, const Armour& it2)
+{
+    return it1.name == it2.name;
+}
+
+bool operator!=(const Armour& it1, const Armour& it2)
+{
+    return it1.name != it2.name;
 }
 
 Armour& Armour::operator=(const Armour& piece)
@@ -19,6 +36,7 @@ Armour& Armour::operator=(const Armour& piece)
         return *this;
     
     // update values here
+    name = piece.name;
     
     return *this;
 }

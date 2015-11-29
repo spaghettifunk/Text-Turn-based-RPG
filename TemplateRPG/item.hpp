@@ -19,6 +19,7 @@ private:
     int lifetime = 100;
     
 public:
+    Item(std::string);
     Item(const Item&);
     
     Item& operator=(const Item&);
