@@ -10,5 +10,18 @@
 #define dwarf_hpp
 
 #include <stdio.h>
+#include "ch_type.hpp"
+
+class Dwarf : public CH_Type
+{
+private:
+    // special things
+public:
+    
+    Dwarf();
+    ~Dwarf();
+    
+    void LevelUp(int);
+};
 
 #endif /* dwarf_hpp */

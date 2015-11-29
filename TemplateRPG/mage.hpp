@@ -10,5 +10,21 @@
 #define mage_hpp
 
 #include <stdio.h>
+#include "ch_class.hpp"
+
+class Mage : public Ch_Class
+{
+private:
+    
+public:
+    
+    Mage(int, int, int, int);
+    ~Mage();
+    
+    void SetPrimaryAttribute(); // increment intelligence
+    void SetSecondaryAttribute();   //  increment agility
+    void SetWeakness(); // lowel strength
+    void LevelUp(int);
+};
 
 #endif /* mage_hpp */

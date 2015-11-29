@@ -7,12 +7,11 @@
 //
 
 #include <iostream>
+
 #include "base_character.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    
-    Base_Character character;
     
     std::cout << "Hello, World!\n";
     return 0;

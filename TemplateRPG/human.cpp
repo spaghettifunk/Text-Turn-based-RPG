@@ -7,3 +7,11 @@
 //
 
 #include "human.hpp"
+
+Human::Human() : CH_Type() { }
+Human::~Human() { }
+
+void Human::LevelUp(int level)
+{
+
+}

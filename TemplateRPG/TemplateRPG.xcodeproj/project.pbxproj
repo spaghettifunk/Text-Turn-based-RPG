@@ -24,6 +24,7 @@
 		08E2C7E11C0A25330096E791 /* mission_items.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7DF1C0A25330096E791 /* mission_items.cpp */; };
 		08E2C7E61C0A29630096E791 /* ch_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7E41C0A29630096E791 /* ch_type.cpp */; };
 		08E2C7E91C0A2B240096E791 /* ch_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7E71C0A2B240096E791 /* ch_list.cpp */; };
+		08E2C7EE1C0B75810096E791 /* spell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7EC1C0B75810096E791 /* spell.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +75,8 @@
 		08E2C7E51C0A29630096E791 /* ch_type.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ch_type.hpp; sourceTree = "<group>"; };
 		08E2C7E71C0A2B240096E791 /* ch_list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ch_list.cpp; sourceTree = "<group>"; };
 		08E2C7E81C0A2B240096E791 /* ch_list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ch_list.hpp; sourceTree = "<group>"; };
+		08E2C7EC1C0B75810096E791 /* spell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spell.cpp; sourceTree = "<group>"; };
+		08E2C7ED1C0B75810096E791 /* spell.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = spell.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 		08E2C7B51C0A24230096E791 /* special */ = {
 			isa = PBXGroup;
 			children = (
+				08E2C7EB1C0B75540096E791 /* spells */,
 				08E2C7BA1C0A24550096E791 /* class */,
 				08E2C7B91C0A24430096E791 /* type */,
 			);
@@ -208,6 +212,15 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
+		08E2C7EB1C0B75540096E791 /* spells */ = {
+			isa = PBXGroup;
+			children = (
+				08E2C7EC1C0B75810096E791 /* spell.cpp */,
+				08E2C7ED1C0B75810096E791 /* spell.hpp */,
+			);
+			name = spells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,6 +287,7 @@
 				08E2C7D31C0A24EE0096E791 /* weapon.cpp in Sources */,
 				08E2C7C61C0A24910096E791 /* warrior.cpp in Sources */,
 				08E2C7E61C0A29630096E791 /* ch_type.cpp in Sources */,
+				08E2C7EE1C0B75810096E791 /* spell.cpp in Sources */,
 				08E2C7E11C0A25330096E791 /* mission_items.cpp in Sources */,
 				08E2C7D71C0A25080096E791 /* item.cpp in Sources */,
 				08E2C7DE1C0A25270096E791 /* other_items.cpp in Sources */,

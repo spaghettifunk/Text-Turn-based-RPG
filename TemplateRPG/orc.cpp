@@ -7,3 +7,8 @@
 //
 
 #include "orc.hpp"
+
+Orc::Orc() : CH_Type() { }
+Orc::~Orc() { }
+
+void Orc::LevelUp(int level) { }

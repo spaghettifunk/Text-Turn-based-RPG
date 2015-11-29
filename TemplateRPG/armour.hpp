@@ -12,11 +12,18 @@
 #include <stdio.h>
 #include <string>
 
+enum Part { Head, Body, Legs, Arms, Hands, Shoulders, Feet, Neck };
+
 class Armour
 {
 private:
-    std::string name = "";
-    int lifetime = 100;
+    std::string name = "";  // armour name
+    
+    int duration = 100; // legth of duration
+    int duration_factor = 1;    // this will change che lifetime
+    
+    Part body_part; // define the body part of the armour
+    
 public:
     Armour(std::string);
     Armour(const Armour&);
@@ -30,7 +37,9 @@ public:
     
     // methods
     void SetName(std::string);
-    void SetLifetime(int);
+    void SetDuration(int);
+    void SetDurationFactor(int);
+    void SetPart(Part);
 };
 
 #endif /* armour_hpp */

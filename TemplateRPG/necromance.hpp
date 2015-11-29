@@ -10,5 +10,21 @@
 #define necromance_hpp
 
 #include <stdio.h>
+#include "ch_class.hpp"
+
+class Necromance : public Ch_Class
+{
+private:
+    
+public:
+    
+    Necromance(int, int, int, int);
+    ~Necromance();
+    
+    void SetPrimaryAttribute(); // increment agility
+    void SetSecondaryAttribute();   // slightly increment intelligence
+    void SetWeakness(); // lowel damage
+    void LevelUp(int); 
+};
 
 #endif /* necromance_hpp */

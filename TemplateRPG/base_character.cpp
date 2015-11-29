@@ -21,37 +21,66 @@ void Base_Character::InitializeCharacter(Ch_Class& c, CH_Type& t, Gender g)
     this->ch_class = &c;
     this->ch_type = &t;
     this->ch_gender = g;
+    
+    this->ch_class->SetPrimaryAttribute();
+    this->ch_class->SetSecondaryAttribute();
+    this->ch_class->SetWeakness();
 }
 
 // methods
-void Base_Character::AddItemBag(Item item)
+void Base_Character::SetName(std::string name) { this->ch_name = name; }
+void Base_Character::AddItemBag(Item item) { this->bag.Insert(item); }
+void Base_Character::RemoveItemBag(Item item) { this->bag.Remove(item); }
+void Base_Character::SetArmour(Armour armour) { this->armour.Insert(armour); }
+void Base_Character::RemoveArmour(Armour armour) { this->armour.Remove(armour); }
+void Base_Character::SetWeapon(Weapon& weapon) { this->ch_weapon = &weapon; }
+void Base_Character::RemoveWeapon() { this->ch_weapon = nullptr; }
+
+// set EXP and level up in case
+void Base_Character::SetXP(int xp)
 {
-    this->bag.Insert(item);
+    exp += xp;
+    if (exp > 100) {
+        LevelUp();
+    }
+    else if (exp > 250) {
+        LevelUp();
+    }
+    else if (exp > 600) {
+        LevelUp();
+    }
+    else if (exp > 1000) {
+        LevelUp();
+    }
+    else if (exp > 1500) {
+        LevelUp();
+    }
+    else if (exp > 2500) {
+        LevelUp();
+    }
+    else if (exp > 4000) {
+        LevelUp();
+    }
 }
 
-void Base_Character::RemoveItemBag(Item item)
+// level up based on the type and class
+void Base_Character::LevelUp()
 {
-    this->bag.Remove(item);
+    ++level;
+    ch_type->LevelUp(level);
+    ch_class->LevelUp(level);
 }
 
-void Base_Character::SetArmour(Armour armour)
+// TODO: say that the gold is not enough
+void Base_Character::SetGold(int amount)
 {
-    this->armour.Insert(armour);
-}
-
-void Base_Character::RemoveArmour(Armour armour)
-{
-    this->armour.Remove(armour);
-}
-
-void Base_Character::SetWeapon(Weapon& weapon)
-{
-    this->ch_weapon = &weapon;
-}
-
-void Base_Character::RemoveWeapon()
-{
-    this->ch_weapon = nullptr;
+    int temp = gold + amount;
+    if (temp <= 0) {
+        // you can't buy it
+        return;
+    }
+    
+    gold = temp;
 }
 
 // Apply damage to character

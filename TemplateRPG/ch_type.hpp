@@ -13,7 +13,14 @@
 
 class CH_Type
 {
+private:
+
+public:
     
+    CH_Type();
+    virtual ~CH_Type();
+    
+    virtual void LevelUp(int) = 0;
 };
 
 #endif /* ch_type_hpp */

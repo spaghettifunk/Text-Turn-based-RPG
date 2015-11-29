@@ -7,3 +7,8 @@
 //
 
 #include "dwarf.hpp"
+
+Dwarf::Dwarf() : CH_Type() { }
+Dwarf::~Dwarf() { }
+
+void Dwarf::LevelUp(int level) { }

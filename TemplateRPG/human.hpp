@@ -10,5 +10,18 @@
 #define human_hpp
 
 #include <stdio.h>
+#include "ch_type.hpp"
+
+class Human : public CH_Type
+{
+private:
+    // special things
+public:
+    
+    Human();
+    ~Human();
+    
+    void LevelUp(int);  // not sure yet
+};
 
 #endif /* human_hpp */

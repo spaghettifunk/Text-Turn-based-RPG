@@ -7,3 +7,6 @@
 //
 
 #include "ch_class.hpp"
+
+Ch_Class::Ch_Class(int sta, int str, int agl, int intel) : stamina(sta), strength(str), agility(agl), intelligence(intel) { }
+Ch_Class::~Ch_Class() { }

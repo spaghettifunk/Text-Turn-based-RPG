@@ -10,5 +10,18 @@
 #define orc_hpp
 
 #include <stdio.h>
+#include "ch_type.hpp"
+
+class Orc : public CH_Type
+{
+private:
+    // special things
+public:
+    
+    Orc();
+    ~Orc();
+    
+    void LevelUp(int);
+};
 
 #endif /* orc_hpp */

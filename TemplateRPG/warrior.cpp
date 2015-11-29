@@ -7,3 +7,31 @@
 //
 
 #include "warrior.hpp"
+
+Warrior::Warrior(int str, int sta, int agl, int intel) : Ch_Class(str, sta, agl, intel) { }
+Warrior::~Warrior() { }
+
+// increase strength
+void Warrior::SetPrimaryAttribute()
+{
+    this->strength = 20;
+    this->strength_factor = 8;
+}
+
+// slightly increase stamina
+void Warrior::SetSecondaryAttribute()
+{
+    this->stamina = 15;
+    this->stamina_factor = 6;
+}
+
+// lower XP increase
+void Warrior::SetWeakness()
+{
+    this->xp_gain_factor = 3;
+}
+
+void Warrior::LevelUp(int level)
+{
+    // unlock stuff
+}

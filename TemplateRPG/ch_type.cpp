@@ -7,3 +7,6 @@
 //
 
 #include "ch_type.hpp"
+
+CH_Type::CH_Type() { }
+CH_Type::~CH_Type() { }

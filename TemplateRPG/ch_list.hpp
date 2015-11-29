@@ -31,6 +31,4 @@ public:
     int Size();
 };
 
-#include "ch_class.cpp"
-
 #endif /* ch_list_hpp */
