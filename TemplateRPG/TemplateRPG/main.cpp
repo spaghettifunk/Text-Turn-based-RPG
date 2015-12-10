@@ -8,10 +8,16 @@
 
 #include <iostream>
 
-#include "base_character.hpp"
+#include "game_manager.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
+    
+    GameManager game_manager;
+    
+    while (!game_manager.QuitGame()) {
+        game_manager.Update();
+    }
     
     std::cout << "Hello, World!\n";
     return 0;

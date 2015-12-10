@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0868D6461C183C15009698E9 /* game_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0868D6441C183C15009698E9 /* game_manager.cpp */; };
+		0868D64A1C187A5E009698E9 /* pretty_print.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0868D6481C187A5E009698E9 /* pretty_print.cpp */; };
 		08E2C7AB1C0A1D6E0096E791 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E2C7AA1C0A1D6E0096E791 /* main.cpp */; };
 		08EAD9621C0BAE6900EB036D /* npc_boss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9601C0BAE6900EB036D /* npc_boss.cpp */; };
 		08EAD9631C0BAE6900EB036D /* npc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08EAD9611C0BAE6900EB036D /* npc.cpp */; };
@@ -50,6 +52,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0868D6441C183C15009698E9 /* game_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game_manager.cpp; sourceTree = "<group>"; };
+		0868D6451C183C15009698E9 /* game_manager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = game_manager.hpp; sourceTree = "<group>"; };
+		0868D6481C187A5E009698E9 /* pretty_print.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pretty_print.cpp; path = Printing/pretty_print.cpp; sourceTree = "<group>"; };
+		0868D6491C187A5E009698E9 /* pretty_print.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = pretty_print.hpp; path = Printing/pretty_print.hpp; sourceTree = "<group>"; };
 		08E2C7A71C0A1D6E0096E791 /* TextTurnBaseRPG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TextTurnBaseRPG; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E2C7AA1C0A1D6E0096E791 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		08EAD95E1C0BAE6900EB036D /* npc_boss.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = npc_boss.hpp; path = NPC/npc_boss.hpp; sourceTree = "<group>"; };
@@ -120,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0868D6471C187A36009698E9 /* Printing */ = {
+			isa = PBXGroup;
+			children = (
+				0868D6481C187A5E009698E9 /* pretty_print.cpp */,
+				0868D6491C187A5E009698E9 /* pretty_print.hpp */,
+			);
+			name = Printing;
+			sourceTree = "<group>";
+		};
 		08E2C79E1C0A1D6E0096E791 = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +164,10 @@
 		08E2C7A91C0A1D6E0096E791 /* TemplateRPG */ = {
 			isa = PBXGroup;
 			children = (
+				0868D6471C187A36009698E9 /* Printing */,
 				08E2C7AA1C0A1D6E0096E791 /* main.cpp */,
+				0868D6441C183C15009698E9 /* game_manager.cpp */,
+				0868D6451C183C15009698E9 /* game_manager.hpp */,
 			);
 			path = TemplateRPG;
 			sourceTree = "<group>";
@@ -378,8 +396,10 @@
 				08EAD96D1C0BAE8B00EB036D /* ch_list.cpp in Sources */,
 				08EAD9741C0BAEA300EB036D /* life_items.cpp in Sources */,
 				08EAD9751C0BAEA300EB036D /* mission_items.cpp in Sources */,
+				0868D64A1C187A5E009698E9 /* pretty_print.cpp in Sources */,
 				08EAD9681C0BAE8000EB036D /* battle.cpp in Sources */,
 				08E2C7AB1C0A1D6E0096E791 /* main.cpp in Sources */,
+				0868D6461C183C15009698E9 /* game_manager.cpp in Sources */,
 				08EAD9691C0BAE8000EB036D /* turn_base.cpp in Sources */,
 				08EAD98E1C0BAEE200EB036D /* ch_class.cpp in Sources */,
 				08EAD9631C0BAE6900EB036D /* npc.cpp in Sources */,
