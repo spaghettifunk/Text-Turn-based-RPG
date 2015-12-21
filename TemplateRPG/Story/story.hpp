@@ -11,9 +11,18 @@
 
 #include <stdio.h>
 
+#include "dialogs.hpp"
+
 class Story
 {
-
+private:
+    Dialogs dialogs;
+    
+public:
+    Story();
+    ~Story();
+    
+    void Init();
 };
 
 #endif /* story_hpp */

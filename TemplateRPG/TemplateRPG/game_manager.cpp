@@ -14,11 +14,105 @@ GameManager::GameManager()
     this->LoadSavedGameState();
     
     // create pritty print object
-    this->printer = new PrittyPrint();
+    this->game_printer = new PrittyPrint();
 }
 
 
 GameManager::~GameManager() { }
+
+void GameManager::InitializeStory()
+{
+    game_story = new Story();
+    game_story->Init();
+}
+
+void GameManager::CreateCharacter()
+{
+    std::string name;
+    int genderCharacter = -1;
+    int typeCharacter = -1;
+    int classCharatcter = -1;
+    
+    do {
+        std::cout << "Inser your Name: ";
+        std::cin >> name;
+    } while (name != "" || name != " ");
+    
+    // set name
+    this->main_character->SetName(name);
+    
+    do {
+        std::cout << "Select gender: \n";
+        std::cout << "1) Male\n";
+        std::cout << "2) Female\n";
+        std::cout << "Insert the number: ";
+        std::cin >> genderCharacter;
+    } while (genderCharacter > 2 || genderCharacter < 1);
+    
+    
+    do {
+        std::cout << "Select a Type of character:\n";
+        std::cout << "1) Human\n";
+        std::cout << "2) Dwarf\n";
+        std::cout << "3) Orc\n";
+        std::cout << "Insert the number: ";
+        std::cin >> typeCharacter;
+    } while (typeCharacter > 3 || typeCharacter < 1);
+    
+    do {
+        std::cout << "\nSelect a Class among these:\n";
+        std::cout << "1) Warrion\n";
+        std::cout << "2) Necromance\n";
+        std::cout << "3) Mage\n";
+        std::cout << "Insert the number: ";
+        std::cin >> classCharatcter;
+    } while (classCharatcter > 3 || classCharatcter < 1);
+    
+    Gender gender;
+    
+    if (genderCharacter == 1) gender = M;
+    else gender = F;
+    
+    // Human
+    if (typeCharacter == 1 && classCharatcter == 1)
+        this->main_character->InitializeCharacter(*(new Warrior(10, 10, 10, 10)),        // stamina, strength, agility, intelligence
+                                                  *(new Human()),
+                                                  gender);
+    if (typeCharacter == 1 && classCharatcter == 2)
+        this->main_character->InitializeCharacter(*(new Necromance(10, 10, 10, 10)),     // stamina, strength, agility, intelligence
+                                                  *(new Human()),
+                                                  gender);
+    if (typeCharacter == 1 && classCharatcter == 3)
+        this->main_character->InitializeCharacter(*(new Mage(10, 10, 10, 10)),       // stamina, strength, agility, intelligence
+                                                  *(new Human()),
+                                                  gender);
+    // Dwarf
+    if (typeCharacter == 2 && classCharatcter == 1)
+        this->main_character->InitializeCharacter(*(new Warrior(10, 10, 10, 10)),        // stamina, strength, agility, intelligence
+                                                  *(new Dwarf()),
+                                                  gender);
+    if (typeCharacter == 2 && classCharatcter == 2)
+        this->main_character->InitializeCharacter(*(new Necromance(10, 10, 10, 10)),     // stamina, strength, agility, intelligence
+                                                  *(new Dwarf()),
+                                                  gender);
+    if (typeCharacter == 2 && classCharatcter == 3)
+        this->main_character->InitializeCharacter(*(new Mage(10, 10, 10, 10)),       // stamina, strength, agility, intelligence
+                                                  *(new Dwarf()),
+                                                  gender);
+    // Orc
+    if (typeCharacter == 3 && classCharatcter == 1)
+        this->main_character->InitializeCharacter(*(new Warrior(10, 10, 10, 10)),        // stamina, strength, agility, intelligence
+                                                  *(new Orc()),
+                                                  gender);
+    if (typeCharacter == 3 && classCharatcter == 2)
+        this->main_character->InitializeCharacter(*(new Necromance(10, 10, 10, 10)),     // stamina, strength, agility, intelligence
+                                                  *(new Orc()),
+                                                  gender);
+    if (typeCharacter == 3 && classCharatcter == 3)
+        this->main_character->InitializeCharacter(*(new Mage(10, 10, 10, 10)),       // stamina, strength, agility, intelligence
+                                                  *(new Orc()),
+                                                  gender);
+}
 
 void GameManager::Update()
 {
@@ -29,11 +123,11 @@ void GameManager::Update()
     // check if in battle
     
     // print on screen everything
-    this->printer->PrintOnScreen();
+    this->game_printer->PrintOnScreen();
     
     // wait for user input
     std::string userInput = ""; // read from keyboard
-    this->printer->GetUserInput(userInput);
+    this->game_printer->GetUserInput(userInput);
 }
 
 void GameManager::LoadSavedGameState()

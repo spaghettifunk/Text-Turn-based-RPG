@@ -17,13 +17,30 @@
 #include <stdexcept>
 
 #include "pretty_print.hpp"
+#include "base_character.hpp"
+#include "story.hpp"
+#include "world.hpp"
+
+// type
+#include "human.hpp"
+#include "dwarf.hpp"
+#include "orc.hpp"
+
+// classes
+#include "mage.hpp"
+#include "warrior.hpp"
+#include "necromance.hpp"
 
 class GameManager
 {
 private:
     bool quit = false;
     
-    PrittyPrint* printer;
+    PrittyPrint* game_printer;
+    Story* game_story;
+    World* game_world;
+    
+    Base_Character* main_character;
 
 public:
     GameManager();
@@ -33,6 +50,9 @@ public:
     
     void LoadSavedGameState();
     void SaveGameState();
+    
+    void InitializeStory();
+    void CreateCharacter();
     
     bool QuitGame();
 };

@@ -15,6 +15,8 @@ int main(int argc, const char * argv[]) {
     
     GameManager game_manager;
     
+    game_manager.CreateCharacter();
+    
     while (!game_manager.QuitGame()) {
         game_manager.Update();
     }
